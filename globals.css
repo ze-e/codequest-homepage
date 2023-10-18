@@ -1,0 +1,29 @@
+body {
+  background: #36213E;
+  margin: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #63768D;
+}
+
+a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

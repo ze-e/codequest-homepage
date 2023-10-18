@@ -1,0 +1,131 @@
+.banner {
+  background: #36213E;
+  padding: 22px 0;
+}
+
+.title-wrapper {
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "IM Fell Great Primer SC", Helvetica;
+  font-weight: 400;
+  color: #ffd600;
+  font-size: 64px;
+  text-align: center;
+}
+
+.title-wrapper.small {
+  font-size: 28px;
+  text-align: left;
+  margin: 0 6px;
+}
+
+.body {
+  position: relative;
+  background: #63768D;
+  font-family: "Monda", Helvetica;
+  overflow: auto;
+}
+
+.nav {
+  position: sticky;
+  background: #E3E3E3;
+  padding: 10px;
+  top: 0;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-right: 8px;
+  margin: 8px 0;
+}
+
+.nav-link {
+  padding: 5px;
+  font-weight: bold;
+  color: #63768D;
+  text-align: center;
+}
+
+.nav-link.active {
+  color: black;
+}
+
+.contact-button {
+  padding: 8px;
+  border-radius: 20px;
+  border: 3px solid #36213E;
+  box-shadow: 0px 4px 4px #00000040;
+  background: #63768D;
+  color: #E3E3E3;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contact-button:hover {
+  transform: translate(2px, 2px);
+}
+
+.contact-button.contact-button-lg {
+  border: 3px solid #ffd600;
+  font-size: 28px;
+}
+
+.intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #36213E;
+  color: #C5CAE9;
+  padding: 38px;
+}
+
+.intro-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.intro-subtitle {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.intro-items {
+  margin: 32px 100px;
+}
+
+.intro-item {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.intro-item:last-child {
+  margin-bottom: 0;
+}
+
+.intro-item-icon {
+  margin-right: 30px;
+}
+
+.intro-item-icon {
+  width: 65px;
+}
+
+.intro-item-text {
+  font-size: 18px;
+}
+
+.footer {
+  background: #36213E;
+  color: #C5CAE9;
+  font-size: 24px;
+}
+
+#currentYear {
+  margin-left: 4px;
+}
