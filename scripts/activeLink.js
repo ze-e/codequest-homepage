@@ -5,7 +5,7 @@ function setActiveNavLinks() {
 
   // Add an event listener for scrolling
   window.addEventListener("scroll", () => {
-    const fromTop = window.scrollY;
+    const fromTop = window.scrollY + 42;
 
     navLinks.forEach((navLink, index) => {
       const section = sections[index];
