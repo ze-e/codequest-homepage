@@ -83,44 +83,43 @@
   padding-bottom: 120px;
 }
 
-.intro {
-  background: #36213E;
+#home {
   color: #C5CAE9;
 }
 
-.intro-title {
+.home-title {
   font-size: 32px;
   margin-bottom: 12px;
 }
 
-.intro-subtitle {
+.home-subtitle {
   font-size: 20px;
   margin-bottom: 12px;
 }
 
-.intro-items {
+.home-items {
   margin: 32px 100px;
 }
 
-.intro-item {
+.home-item {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
 
-.intro-item:last-child {
+.home-item:last-child {
   margin-bottom: 0;
 }
 
-.intro-item-icon {
+.home-item-icon {
   margin-right: 30px;
 }
 
-.intro-item-icon {
+.home-item-icon {
   width: 65px;
 }
 
-.intro-item-text {
+.home-item-text {
   font-size: 18px;
 }
 
@@ -142,11 +141,11 @@
   text-align: right;
 }
 
-.about, .scratch {
+#about, #scratch {
   background: #63768D;
 }
 
-.lessons, .costs {
+#home, #lessons, #costs {
   background: #36213E;
 }
 
@@ -198,7 +197,7 @@
   font-size: 18px;
 }
 
-.scratch .text-img-container {
+#scratch .text-img-container {
   background: #36213E;
 }
 
