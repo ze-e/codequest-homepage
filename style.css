@@ -131,18 +131,30 @@
   color: #ffd600;
   font-size: 64px;
   text-align: center;
-  margin-bottom: 77px;
+  width: 100%;
 }
 
+.page-title.left-title {
+  text-align: left;
+}
 
-.about {
+.page-title.right-title {
+  text-align: right;
+}
+
+.about, .scratch {
   background: #63768D;
+}
+
+.lessons, .costs {
+  background: #36213E;
 }
 
 .about-items {
   display: flex;
   justify-self: center;
   align-items: center;
+  margin-top: 77px;
 }
 
 .about-item {
@@ -173,10 +185,56 @@
   height: 256px;
 }
 
+.text-img-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #63768D;
+  border-radius: 20px;
+  font-family: "Monda", Helvetica;
+  font-weight: bold;
+  color: #E3E3E3;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.scratch .text-img-container {
+  background: #36213E;
+}
+
+.text-img-container .text-img-text {
+  flex: 2;
+  padding: 10px;
+}
+
+.text-img-container .text-img-img {
+  flex: 1;
+  max-width: 33.33%;
+  background: #E3E3E3;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.text-img-container.img-left .text-img-img {
+  order: 1;
+}
+
+.text-img-container.img-left .text-img-text {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.text-img-container.img-right .text-img-text {
+  margin-left: 20px;
+  text-align: right;
+}
+
 .footer {
   background: #36213E;
-  color: #C5CAE9;
-  font-size: 24px;
+  color: #63768D;
+  font-size: 16px;
+  margin-top: -26px;
 }
 
 #currentYear {
