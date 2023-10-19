@@ -73,6 +73,10 @@
   font-size: 28px;
 }
 
+#about, #lessons, #costs, #scratch {
+  padding-bottom: 120px;
+}
+
 .section {
   text-align: center;
   display: flex;
@@ -80,7 +84,6 @@
   justify-content: center;
   align-items: center;
   padding: 38px;
-  padding-bottom: 120px;
 }
 
 #home {
@@ -92,9 +95,11 @@
   margin-bottom: 12px;
 }
 
-.home-subtitle {
+.subtitle {
   font-size: 20px;
   margin-bottom: 12px;
+  color: #C5CAE9;
+  font-weight: bold;
 }
 
 .home-items {
@@ -185,17 +190,24 @@
   height: 256px;
 }
 
-.text-img-container {
+.text-container, .text-img-container {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: #63768D;
   border-radius: 20px;
   font-family: "Monda", Helvetica;
   font-weight: bold;
-  color: #E3E3E3;
   margin-top: 16px;
   font-size: 18px;
+  color: #E3E3E3;
+}
+
+.text-container {
+  background: #36213E;
+}
+
+.text-img-container {
+  background: #63768D;
 }
 
 #scratch .text-img-container {
@@ -230,6 +242,50 @@
   text-align: right;
 }
 
+.form {
+  flex-direction: column;
+  padding: 32px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.input {
+  height: 40px;
+  background-color: #C5CAE9;
+  color: #000;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.textarea {
+  height: 200px; /* 20px per row (5 rows) */
+  background-color: #C5CAE9;
+  color: #000;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.textarea::placeholder, .input::placeholder {
+  color: #36213E;
+  padding: 6px;
+  font-size: 18px;
+}
+
+.success {
+  color: darkgreen;
+}
+
+.error {
+  color: darkred;
+}
+
 .footer {
   background: #63768D;
   color: #E3E3E3;
@@ -239,12 +295,4 @@
 
 #currentYear {
   margin-left: 4px;
-}
-
-.success {
-  color: darkgreen;
-}
-
-.error {
-  color: darkred;
 }

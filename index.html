@@ -24,13 +24,13 @@
         </section>
         <section id="home" class="section">
             <h3 class="home-title">Want to learn to code?</h3>
-            <h4 class="home-subtitle">Join<span class="title-wrapper small">CODEQUEST</span> and embark on your coding adventure!</h4>
+            <h4 class="subtitle">Join<span class="title-wrapper small">CODEQUEST</span> and embark on your coding adventure!</h4>
             <ul class="home-items">
                 <li class="home-item"><img class="home-item-icon" src="img/game-controller.svg" alt="game-controller"><span class="home-item-text">Create games . . .</span></li>
                 <li class="home-item"><img class="home-item-icon" src="img/movie.svg" alt="movie"><span class="home-item-text">Animated movies . . .</span></li>
                 <li class="home-item"><img class="home-item-icon" src="img/creative-projects.svg" alt="creative-projects"><span class="home-item-text">. . . many other creative coding projects!</span></li>
             </ul>
-            <h4 class="home-subtitle">For more information, contact us at: <a href="mailto:CodeQuestMail@gmail.com">CodeQuestMail@gmail.com</a></h4>
+            <h4 class="subtitle">For more information, contact us at: <a href="mailto:CodeQuestMail@gmail.com">CodeQuestMail@gmail.com</a></h4>
             <a class="contact-button contact-button-lg" href="#contact">JOIN NOW!</a>
         </section>
         <section id="about" class="section">
@@ -79,25 +79,25 @@
         </section>
         <section id="contact" class="section">
             <h2 class="page-title">Contact Us!</h2>
-                <p class="text-img text-center">
+            <form id="emailForm" class="text-container form" action="https://formspree.io/f/xdoryrba" method="POST">
+                <p class="text-img text-center subtitle">
                     Contact us for more information on how to start your CodeQuest journey today!
                 </p>
-        <form id="emailForm" action="https://formspree.io/f/xdoryrba" method="POST">
-  <label>
-      Name:
-      <input required type="text" name="name" placeholder="Type your name here...">
-  </label>
-  <label>
-      Email:
-      <input required type="email" name="email" placeholder="Type your email here...">
-  </label>
-  <label>
-      Your message (optional):
-      <textarea name="message" placeholder="Type your message here..."></textarea>
-  </label>
-  <button type="submit">Let's Go!</button>
-  <p id="form-status"></p>
-</form>
+                <label class="label">
+                    Name
+                    <input class="input" required type="text" name="name" placeholder="Type your name here...">
+                </label>
+                <label class="label">
+                    Email
+                    <input class="input" required type="email" name="email" placeholder="Type your email here...">
+                </label>
+                <label class="label">
+                    Your message (optional)
+                    <textarea class="textarea" name="message" placeholder="Type your message here..." row="5"></textarea>
+                </label class="label">
+                <button class="contact-button contact-button-lg" type="submit">Let's Go!</button>
+                <p id="form-status"></p>
+            </form>
         </section>
         <section class="footer">
             <p>Zachary Rex Rodriguez &copy;<span id="currentYear"></span></p>
