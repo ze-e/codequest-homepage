@@ -223,9 +223,13 @@
   flex: 1;
   max-width: 33.33%;
   background: #E3E3E3;
-  padding: 8px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+.text-img-container .text-img-img img {
+  transform: scale(.75);
 }
 
 .text-img-container.img-left .text-img-img {
@@ -300,4 +304,16 @@
 
 #currentYear {
   margin-left: 4px;
+}
+
+#lessons {
+  position: relative;
+}
+
+.mascot {
+  width: 250px;
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  transform: scaleX(-1);
 }
