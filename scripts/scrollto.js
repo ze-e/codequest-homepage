@@ -1,8 +1,9 @@
 function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
+  const nav = document.getElementById("nav");
 
   if (element) {
-    const offset = -42; // Adjust the offset as needed
+    const offset = -1 * nav.offsetHeight; // Adjust the offset as needed 42 on tablet and desktop
     const offsetPosition = element.offsetTop + offset;
 
     window.scroll({
