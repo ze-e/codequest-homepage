@@ -2,10 +2,12 @@
 function setActiveNavLinks() {
   const sections = document.querySelectorAll(".section");
   const navLinks = document.querySelectorAll(".nav-link");
+  const nav = document.getElementById("nav");
 
   // Add an event listener for scrolling
   window.addEventListener("scroll", () => {
-    const fromTop = window.scrollY + 42;
+    const offsetBy = window.scrollY + nav.offsetHeight;
+    const fromTop = offsetBy;
 
     navLinks.forEach((navLink, index) => {
       const section = sections[index];
