@@ -14,7 +14,6 @@ function scrollToElement(elementId) {
 
 // Get all navigation links
 const navLinks = document.querySelectorAll(".nav-link");
-
 // Attach click event to each navigation link
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", (event) => {
@@ -22,4 +21,16 @@ navLinks.forEach((navLink) => {
     const targetId = navLink.getAttribute("href").substring(1); // Remove the "#" symbol
     scrollToElement(targetId);
   });
+});
+
+
+  // Get all navigation links
+const navButtons = document.querySelectorAll(".nav-button");
+// Attach click event to each navigation link
+navButtons.forEach((navButton) => {
+  navButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    const targetId = navButton.getAttribute("href").substring(1); // Remove the "#" symbol
+    scrollToElement(targetId);
+  })
 });

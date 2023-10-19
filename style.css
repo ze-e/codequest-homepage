@@ -242,6 +242,10 @@
   text-align: right;
 }
 
+#contact {
+  padding-bottom: 120px;
+}
+
 .form {
   flex-direction: column;
   padding: 32px;
