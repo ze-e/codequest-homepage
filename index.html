@@ -19,7 +19,7 @@
                 <li class="nav-item"><a class="nav-link" href="#lessons">LESSONS</a></li>
                 <li class="nav-item"><a class="nav-link" href="#scratch">SCRATCH</a></li>
                 <li class="nav-item"><a class="nav-link" href="#costs">COSTS</a></li>
-                <li class="nav-item"><a class="contact-button">JOIN NOW!</a></li>
+                <li class="nav-item"><a class="contact-button" href="#contact">JOIN NOW!</a></li>
             </ul>
         </section>
         <section id="home" class="section">
@@ -31,7 +31,7 @@
                 <li class="home-item"><img class="home-item-icon" src="img/creative-projects.svg" alt="creative-projects"><span class="home-item-text">. . . many other creative coding projects!</span></li>
             </ul>
             <h4 class="home-subtitle">For more information, contact us at: <a href="mailto:CodeQuestMail@gmail.com">CodeQuestMail@gmail.com</a></h4>
-            <a class="contact-button contact-button-lg">JOIN NOW!</a>
+            <a class="contact-button contact-button-lg" href="#contact">JOIN NOW!</a>
         </section>
         <section id="about" class="section">
             <h2 class="page-title">How does it work?</h2>
@@ -43,7 +43,7 @@
             </ul>
         </section>
         <section id="lessons" class="section">
-            <h2 class="page-title right-title">Lessons</h2>
+                <h2 class="page-title right-title">Lessons</h2>
             <div class="text-img-container img-left">
                 <img class="text-img-img" src="img/computer.svg" alt="computer">
                 <p class="text-img-text">
@@ -54,7 +54,7 @@
             <!-- <img class="lessons-mascot" src="img/mascot.png" alt="mascot"/> -->
         </section>
         <section id="scratch" class="section">
-            <h2 class="page-title left-title">Scratch</h2>
+                <h2 class="page-title left-title">Scratch</h2>
             <div class="text-img-container img-right">
                 <img class="text-img-img" src="img/scratch-cat.png" alt="scratch">
                 <p class="text-img-text">
@@ -77,11 +77,34 @@
                 </p>
             </div>
         </section>
+        <section id="contact" class="section">
+            <h2 class="page-title">Contact Us!</h2>
+                <p class="text-img text-center">
+                    Contact us for more information on how to start your CodeQuest journey today!
+                </p>
+        <form id="emailForm" action="https://formspree.io/f/xdoryrba" method="POST">
+  <label>
+      Name:
+      <input required type="text" name="name" placeholder="Type your name here...">
+  </label>
+  <label>
+      Email:
+      <input required type="email" name="email" placeholder="Type your email here...">
+  </label>
+  <label>
+      Your message (optional):
+      <textarea name="message" placeholder="Type your message here..."></textarea>
+  </label>
+  <button type="submit">Let's Go!</button>
+  <p id="form-status"></p>
+</form>
+        </section>
         <section class="footer">
-            <p>Copyright Zachary Rex Rodriguez &copy;<span id="currentYear"></span></p>
+            <p>Zachary Rex Rodriguez &copy;<span id="currentYear"></span></p>
         </section>
     </body>
     <footer>
+    <script src="scripts/submitform.js"></script>
         <script src="scripts/copywrite.js"></script>
         <script src="scripts/activelink.js"></script>
         <script src="scripts/scrollto.js"></script>

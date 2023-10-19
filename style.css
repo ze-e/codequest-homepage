@@ -131,6 +131,7 @@
   font-size: 64px;
   text-align: center;
   width: 100%;
+  max-width: 1530px;
 }
 
 .page-title.left-title {
@@ -230,12 +231,20 @@
 }
 
 .footer {
-  background: #36213E;
-  color: #63768D;
+  background: #63768D;
+  color: #E3E3E3;
   font-size: 16px;
   margin-top: -26px;
 }
 
 #currentYear {
   margin-left: 4px;
+}
+
+.success {
+  color: darkgreen;
+}
+
+.error {
+  color: darkred;
 }
