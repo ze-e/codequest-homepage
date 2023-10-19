@@ -230,7 +230,6 @@
 }
 
 .text-img-container .text-img-img img {
-  /* transform: scale(.75); */
   width: 75%;
 }
 
@@ -320,17 +319,23 @@
   transform: scaleX(-1);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 760px) and (min-width: 360px) {
   .title-wrapper {
-    font-size: 120px;
+    font-size: 100px;
   }
 
   .page-title {
-    font-size: 112px;
+    font-size: 82px;
   }
 
   .about-items {
     flex-direction: column;
+  }
+
+  .about-item {
+    margin-right: 0;
+    margin-bottom: 32px;
+    max-width: 100%;
   }
 
   .about-item-title {
@@ -338,15 +343,45 @@
   }
 
   .about-item-text {
-    font-size: 64px;
+    font-size: 32px;
+  }
+
+  .nav-items {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item:after {
+    content: "|";
+    margin: 0 6px;
+  }
+
+  .nav-item:nth-last-child(2)::after, .nav-item:last-child::after {
+    content: "";
   }
 
   .nav-link {
-    font-size: 28px;
+    font-size: 20px;
   }
 
-  .contact-button {
-    font-size: 28px;
+  .nav-button {
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 28px;
+  }
+
+  .text-img-container .text-img-img {
+    max-width: initial;
+    width: 100%;
+  }
+
+  .text-img-container .text-img-img img {
+    width: 25%;
+    padding: 10px;
+  }
+
+  .text-img-container.img-left .text-img-text {
+    padding: 20px;
   }
 
   .contact-button.lg {
@@ -354,12 +389,19 @@
     margin: 32px 0;
   }
 
+  .subtitle a {
+    overflow-wrap: anywhere;
+    font-size: 36px;
+    margin: 24px 0;
+  }
+
   .home-title, .subtitle {
-    font-size: 64px;
+    font-size: 32px;
   }
 
   .title-wrapper.small {
-    font-size: 64px;
+    font-size: 32px;
+    margin-left: 8px;
   }
 
   .home-items {
@@ -367,11 +409,12 @@
   }
 
   .home-item-icon {
-    width: 280px;
+    width: 180px;
   }
 
   .home-item-text {
-    font-size: 64px;
+    font-size: 32px;
+    text-align: left;
   }
 
   .text-img-container.img-left {
@@ -397,5 +440,15 @@
 
   .textarea::placeholder, .input::placeholder {
     font-size: 36px;
+  }
+
+  .mascot {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 360) {
+  .nav-button {
+    font-size: 18px;
   }
 }
