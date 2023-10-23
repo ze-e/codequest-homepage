@@ -75,7 +75,7 @@
 }
 
 #about, #lessons, #costs, #scratch {
-  padding-bottom: 120px;
+  padding-bottom: 130px;
 }
 
 .section {
@@ -164,7 +164,6 @@
 }
 
 .about-item {
-  max-width: 256px;
   margin-right: 42px;
   flex: 1;
 }
@@ -245,6 +244,7 @@
 .text-img-container.img-right .text-img-text {
   margin-left: 20px;
   text-align: right;
+  padding-bottom: 130px;
 }
 
 #contact {
@@ -319,135 +319,12 @@
   transform: scaleX(-1);
 }
 
-@media only screen and (max-width: 760px) and (min-width: 360px) {
-  .title-wrapper {
-    font-size: 100px;
+@media only screen and (max-width: 760px) {
+
+  #lessons {
+    padding-bottom: 16px;
   }
 
-  .page-title {
-    font-size: 82px;
-  }
-
-  .about-items {
-    flex-direction: column;
-  }
-
-  .about-item {
-    margin-right: 0;
-    margin-bottom: 32px;
-    max-width: 100%;
-  }
-
-  .about-item-title {
-    font-size: 64px;
-  }
-
-  .about-item-text {
-    font-size: 32px;
-  }
-
-  .nav-items {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-item:after {
-    content: "|";
-    margin: 0 6px;
-  }
-
-  .nav-item:nth-last-child(2)::after, .nav-item:last-child::after {
-    content: "";
-  }
-
-  .nav-link {
-    font-size: 20px;
-  }
-
-  .nav-button {
-    padding: 10px;
-    font-size: 24px;
-    margin-left: 28px;
-  }
-
-  .text-img-container .text-img-img {
-    max-width: initial;
-    width: 100%;
-  }
-
-  .text-img-container .text-img-img img {
-    width: 25%;
-    padding: 10px;
-  }
-
-  .text-img-container.img-left .text-img-text {
-    padding: 20px;
-  }
-
-  .contact-button.lg {
-    font-size: 64px;
-    margin: 32px 0;
-  }
-
-  .subtitle a {
-    overflow-wrap: anywhere;
-    font-size: 36px;
-    margin: 24px 0;
-  }
-
-  .home-title, .subtitle {
-    font-size: 32px;
-  }
-
-  .title-wrapper.small {
-    font-size: 32px;
-    margin-left: 8px;
-  }
-
-  .home-items {
-    margin: 32px 0;
-  }
-
-  .home-item-icon {
-    width: 180px;
-  }
-
-  .home-item-text {
-    font-size: 32px;
-    text-align: left;
-  }
-
-  .text-img-container.img-left {
-    flex-direction: column-reverse;
-  }
-
-  .text-img-container {
-    flex-direction: column;
-    align-items: normal;
-  }
-
-  .input {
-    height: 80px;
-    font-size: 36px;
-    margin-bottom: 32px;
-  }
-
-  .textarea {
-    height: 200px; /* 20px per row (5 rows) */
-    font-size: 36px;
-    margin-bottom: 18px;
-  }
-
-  .textarea::placeholder, .input::placeholder {
-    font-size: 36px;
-  }
-
-  .mascot {
-    width: 150px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
   .title-wrapper {
     font-size: 46px;
   }
@@ -488,6 +365,7 @@
 
   .about-item {
     margin-right: 0;
+    width: 80%;
   }
 
   .about-item-title {
@@ -505,6 +383,7 @@
   .text-img-container {
     flex-direction: column;
     align-items: normal;
+    width: 70%;
   }
 
   .text-img-container .text-img-img {
@@ -523,7 +402,6 @@
   .mascot {
     margin-top: 16px;
     position: static;
-    width: 64px;
   }
 
   .page-title, .page-title.right-title, .page-title.left-title {
@@ -542,4 +420,23 @@
     padding-bottom: 32px;
   }
 
+}
+
+@media only screen and (max-width: 360px) {
+  .mascot {
+    width: 128px;
+  }
+
+  .about-item {
+    max-width: 256px;
+  }
+
+  .text-img-container .text-img-img {
+    max-width: initial;
+    width: 100%;
+  }
+
+  .text-img-container {
+    width: 100%;
+  }
 }
