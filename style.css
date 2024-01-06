@@ -270,6 +270,10 @@
   width: 80%;
 }
 
+.label:first-of-type {
+  margin-top: 12px;
+}
+
 .input {
   height: 40px;
   background: #C5CAE9;
