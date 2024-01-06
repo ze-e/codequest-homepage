@@ -371,6 +371,10 @@
     flex-direction: column;
   }
 
+  .testimonial-items {
+    margin-top: 0;
+  }
+
   .about-item, .testimonial-item {
     margin-right: 0;
     width: 80%;
