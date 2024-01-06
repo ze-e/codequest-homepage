@@ -74,7 +74,7 @@
   font-size: 28px;
 }
 
-#about, #lessons, #costs, #scratch {
+#about, #lessons, #costs, #scratch, #testimonial {
   padding-bottom: 130px;
 }
 
@@ -152,27 +152,27 @@
   background: #63768D;
 }
 
-#home, #lessons, #costs {
+#home, #lessons, #costs, #testimonial {
   background: #36213E;
 }
 
-.about-items {
+.about-items, .testimonial-items {
   display: flex;
   justify-self: center;
   align-items: center;
   margin-top: 77px;
 }
 
-.about-item {
+.about-item, .testimonial-item {
   margin-right: 42px;
   flex: 1;
 }
 
-.about-item:last-child {
+.about-item:last-child, .testimonial-item:last-child {
   margin-right: 0;
 }
 
-.about-item-title {
+.about-item-title, .testimonial-item-title {
   font-family: "IM Fell Great Primer SC", Helvetica;
   color: #ffd600;
   font-size: 32px;
@@ -181,13 +181,21 @@
   margin-bottom: 10px;
 }
 
-.about-item-text {
-  background: #36213E;
+.about-item-text, .testimonial-item-text {
   padding: 44px 30px;
   color: #E3E3E3;
   border-radius: 20px;
   font-weight: bold;
   height: 256px;
+}
+
+.about-item-text {
+  background: #36213E;
+}
+
+
+.testimonial-item-text {
+  background: #63768D;
 }
 
 .text-container, .text-img-container {
@@ -358,21 +366,21 @@
     margin: 16px;
   }
 
-  .about-items {
+  .about-items, .testimonial-items {
     margin-top: 62px;
     flex-direction: column;
   }
 
-  .about-item {
+  .about-item, .testimonial-item {
     margin-right: 0;
     width: 80%;
   }
 
-  .about-item-title {
+  .about-item-title, .testimonial-item {
     margin-top: 32px;
   }
 
-  .about-item-text {
+  .about-item-text, .testimonial-item-text {
     height: 100%;
   }
 
@@ -427,7 +435,7 @@
     width: 128px;
   }
 
-  .about-item {
+  .about-item, .testimonial-item {
     max-width: 256px;
   }
 
